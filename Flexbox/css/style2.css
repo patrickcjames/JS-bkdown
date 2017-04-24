@@ -1,0 +1,61 @@
+html,
+body {
+  box-sizing: border-box;
+  font-size: 80%;
+  padding: 1em;
+  margin: 0;
+  font-family: arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  height: 100%;
+  display: flex;
+}
+
+.page-header {
+  background-color: lightblue;
+  align-content: center;
+  text-align: center;
+}
+
+article {
+  background-color: #675BA7;
+  flex: 2 2 12em;
+}
+
+.content-navigation {
+  background-color: lightgrey;
+  align-content: center;
+  text-align: center;
+}
+
+.content-sidebar {
+  background-color: lightgrey;
+  align-content: center;
+  text-align: center;
+}
+
+.content-article {
+  align-content: center;
+  text-align: center;
+}
+
+nav,
+aside {
+  flex: 1;
+}
+
+.page-footer {
+  background-color: orange;
+  align-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+      flex-direction: column;
+  }
+}
